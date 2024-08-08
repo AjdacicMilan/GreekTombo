@@ -14,7 +14,7 @@ class DataManager {
     var gameOddsDict: [Int:GameOdds]
     var draws: [Draw] {
         get {
-            _draws
+            _draws.sorted(by: { $0.drawTime < $1.drawTime })
         }
         set {
             for drawItem in newValue {
