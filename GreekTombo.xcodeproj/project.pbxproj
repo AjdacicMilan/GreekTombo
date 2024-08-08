@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F129D1B62C6124D100DE1914 /* GreekTomboApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1B52C6124D100DE1914 /* GreekTomboApp.swift */; };
+		F129D1B82C6124D100DE1914 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1B72C6124D100DE1914 /* ContentView.swift */; };
+		F129D1BA2C6124D200DE1914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F129D1B92C6124D200DE1914 /* Assets.xcassets */; };
+		F129D1BE2C6124D200DE1914 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F129D1BD2C6124D200DE1914 /* Preview Assets.xcassets */; };
+		F129D1C72C6127E700DE1914 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1C62C6127E700DE1914 /* NavigationCoordinator.swift */; };
+		F129D1C92C61292800DE1914 /* DrawsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1C82C61292800DE1914 /* DrawsView.swift */; };
+		F129D1CB2C61297300DE1914 /* DrawsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1CA2C61297300DE1914 /* DrawsViewModel.swift */; };
+		F129D1CE2C612A1F00DE1914 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1CD2C612A1F00DE1914 /* View+Extensions.swift */; };
+		F129D1D12C612A6E00DE1914 /* FirstAppearModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1D02C612A6E00DE1914 /* FirstAppearModifier.swift */; };
+		F129D1D42C612B1B00DE1914 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1D32C612B1B00DE1914 /* ApiManager.swift */; };
+		F129D1D62C612B4900DE1914 /* AlamofireSession+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1D52C612B4900DE1914 /* AlamofireSession+Extensions.swift */; };
+		F129D1DD2C612DC200DE1914 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1DC2C612DC200DE1914 /* GameType.swift */; };
+		F129D1E02C61301400DE1914 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F129D1DF2C61301400DE1914 /* Alamofire */; };
+		F129D1E32C61318B00DE1914 /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1E22C61318B00DE1914 /* Draw.swift */; };
+		F129D1E52C613C7A00DE1914 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1E42C613C7A00DE1914 /* Date+Extensions.swift */; };
+		F129D1E72C6143CE00DE1914 /* CustomInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1E62C6143CE00DE1914 /* CustomInterceptor.swift */; };
+		F129D1E92C61524100DE1914 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1E82C61524100DE1914 /* Color+Extensions.swift */; };
+		F129D1EE2C616F9F00DE1914 /* DrawDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1ED2C616F9F00DE1914 /* DrawDetailsView.swift */; };
+		F129D1F02C616FDB00DE1914 /* DrawDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1EF2C616FDB00DE1914 /* DrawDetailsViewModel.swift */; };
+		F129D1F32C61795900DE1914 /* TabMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1F22C61795900DE1914 /* TabMenuView.swift */; };
+		F129D1FA2C617B1E00DE1914 /* DrawLiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1F92C617B1E00DE1914 /* DrawLiveView.swift */; };
+		F129D1FD2C617B7200DE1914 /* DrawsHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1FC2C617B7200DE1914 /* DrawsHistoryView.swift */; };
+		F129D1FF2C618D5E00DE1914 /* HandDrawnCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129D1FE2C618D5E00DE1914 /* HandDrawnCircle.swift */; };
+		F14851352C62A1E200BB4994 /* BettingOdds.json in Resources */ = {isa = PBXBuildFile; fileRef = F14851342C62A1E200BB4994 /* BettingOdds.json */; };
+		F14851372C62A6EF00BB4994 /* GameOdds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14851362C62A6EF00BB4994 /* GameOdds.swift */; };
+		F148513B2C62B3EE00BB4994 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F148513A2C62B3EE00BB4994 /* DataManager.swift */; };
+		F148513D2C62C26400BB4994 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F148513C2C62C26400BB4994 /* Int+Extensions.swift */; };
+		F148513F2C62CE3400BB4994 /* QuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F148513E2C62CE3400BB4994 /* QuoteCell.swift */; };
+		F15A0CF42C64C96A000E8267 /* DrawArray+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A0CF32C64C96A000E8267 /* DrawArray+Extensions.swift */; };
+		F1AD7D292C6250E30008C23B /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7D282C6250E30008C23B /* ViewType.swift */; };
+		F1AD7D2B2C62513C0008C23B /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7D2A2C62513C0008C23B /* Tab.swift */; };
+		F1AD7D2D2C625BFF0008C23B /* ShadowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7D2C2C625BFF0008C23B /* ShadowModifier.swift */; };
+		F1AD7D312C627A7C0008C23B /* NavigationCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7D302C627A7C0008C23B /* NavigationCoordinatorDelegate.swift */; };
+		F1B7C2882C649B07002D523A /* BallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7C2872C649B07002D523A /* BallView.swift */; };
+		F1BFF5452C6412FC0049600D /* DrawLiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BFF5442C6412FC0049600D /* DrawLiveViewModel.swift */; };
+		F1C343202C6224DC0050DF43 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C3431F2C6224DC0050DF43 /* WebView.swift */; };
+		F1C343222C6229B40050DF43 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C343212C6229B40050DF43 /* DateFormatter+Extensions.swift */; };
+		F1C343252C622CBC0050DF43 /* DrawDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C343242C622CBC0050DF43 /* DrawDetailsHeaderView.swift */; };
+		F1C343272C622D570050DF43 /* DrawDetailsHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C343262C622D570050DF43 /* DrawDetailsHeaderViewModel.swift */; };
+		F1E1FBE82C6359FC006C0E22 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E1FBE72C6359FC006C0E22 /* UserDefaults+Extensions.swift */; };
+		F1E1FBEA2C635F2F006C0E22 /* CombinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E1FBE92C635F2F006C0E22 /* CombinationView.swift */; };
+		F1E1FBEC2C636197006C0E22 /* BackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E1FBEB2C636197006C0E22 /* BackgroundModifier.swift */; };
+		F1E1FBEE2C638CA8006C0E22 /* DrawsHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E1FBED2C638CA8006C0E22 /* DrawsHistoryViewModel.swift */; };
+		F1E1FBF02C63A338006C0E22 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E1FBEF2C63A338006C0E22 /* Score.swift */; };
+		F1E1FBF22C63A741006C0E22 /* WinningNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E1FBF12C63A741006C0E22 /* WinningNumbers.swift */; };
+		F1E1FBF42C63A9E3006C0E22 /* ScoreSectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E1FBF32C63A9E3006C0E22 /* ScoreSectionData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F129D1B22C6124D100DE1914 /* GreekTombo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreekTombo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F129D1B52C6124D100DE1914 /* GreekTomboApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreekTomboApp.swift; sourceTree = "<group>"; };
+		F129D1B72C6124D100DE1914 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F129D1B92C6124D200DE1914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F129D1BB2C6124D200DE1914 /* GreekTombo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GreekTombo.entitlements; sourceTree = "<group>"; };
+		F129D1BD2C6124D200DE1914 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F129D1C62C6127E700DE1914 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		F129D1C82C61292800DE1914 /* DrawsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsView.swift; sourceTree = "<group>"; };
+		F129D1CA2C61297300DE1914 /* DrawsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsViewModel.swift; sourceTree = "<group>"; };
+		F129D1CD2C612A1F00DE1914 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		F129D1D02C612A6E00DE1914 /* FirstAppearModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppearModifier.swift; sourceTree = "<group>"; };
+		F129D1D32C612B1B00DE1914 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		F129D1D52C612B4900DE1914 /* AlamofireSession+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlamofireSession+Extensions.swift"; sourceTree = "<group>"; };
+		F129D1DC2C612DC200DE1914 /* GameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameType.swift; sourceTree = "<group>"; };
+		F129D1E22C61318B00DE1914 /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
+		F129D1E42C613C7A00DE1914 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		F129D1E62C6143CE00DE1914 /* CustomInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInterceptor.swift; sourceTree = "<group>"; };
+		F129D1E82C61524100DE1914 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		F129D1ED2C616F9F00DE1914 /* DrawDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailsView.swift; sourceTree = "<group>"; };
+		F129D1EF2C616FDB00DE1914 /* DrawDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailsViewModel.swift; sourceTree = "<group>"; };
+		F129D1F22C61795900DE1914 /* TabMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenuView.swift; sourceTree = "<group>"; };
+		F129D1F92C617B1E00DE1914 /* DrawLiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLiveView.swift; sourceTree = "<group>"; };
+		F129D1FC2C617B7200DE1914 /* DrawsHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsHistoryView.swift; sourceTree = "<group>"; };
+		F129D1FE2C618D5E00DE1914 /* HandDrawnCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandDrawnCircle.swift; sourceTree = "<group>"; };
+		F14851342C62A1E200BB4994 /* BettingOdds.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BettingOdds.json; sourceTree = "<group>"; };
+		F14851362C62A6EF00BB4994 /* GameOdds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOdds.swift; sourceTree = "<group>"; };
+		F148513A2C62B3EE00BB4994 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F148513C2C62C26400BB4994 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		F148513E2C62CE3400BB4994 /* QuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCell.swift; sourceTree = "<group>"; };
+		F15A0CF32C64C96A000E8267 /* DrawArray+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrawArray+Extensions.swift"; sourceTree = "<group>"; };
+		F1AD7D282C6250E30008C23B /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
+		F1AD7D2A2C62513C0008C23B /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		F1AD7D2C2C625BFF0008C23B /* ShadowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowModifier.swift; sourceTree = "<group>"; };
+		F1AD7D302C627A7C0008C23B /* NavigationCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		F1B7C2872C649B07002D523A /* BallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallView.swift; sourceTree = "<group>"; };
+		F1BFF5442C6412FC0049600D /* DrawLiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLiveViewModel.swift; sourceTree = "<group>"; };
+		F1C3431F2C6224DC0050DF43 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		F1C343212C6229B40050DF43 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		F1C343242C622CBC0050DF43 /* DrawDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailsHeaderView.swift; sourceTree = "<group>"; };
+		F1C343262C622D570050DF43 /* DrawDetailsHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailsHeaderViewModel.swift; sourceTree = "<group>"; };
+		F1E1FBE72C6359FC006C0E22 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		F1E1FBE92C635F2F006C0E22 /* CombinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationView.swift; sourceTree = "<group>"; };
+		F1E1FBEB2C636197006C0E22 /* BackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundModifier.swift; sourceTree = "<group>"; };
+		F1E1FBED2C638CA8006C0E22 /* DrawsHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsHistoryViewModel.swift; sourceTree = "<group>"; };
+		F1E1FBEF2C63A338006C0E22 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		F1E1FBF12C63A741006C0E22 /* WinningNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinningNumbers.swift; sourceTree = "<group>"; };
+		F1E1FBF32C63A9E3006C0E22 /* ScoreSectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreSectionData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F129D1AF2C6124D100DE1914 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F129D1E02C61301400DE1914 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F129D1A92C6124D000DE1914 = {
+			isa = PBXGroup;
+			children = (
+				F129D1B42C6124D100DE1914 /* GreekTombo */,
+				F129D1B32C6124D100DE1914 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F129D1B32C6124D100DE1914 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F129D1B22C6124D100DE1914 /* GreekTombo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F129D1B42C6124D100DE1914 /* GreekTombo */ = {
+			isa = PBXGroup;
+			children = (
+				F129D1E12C61317F00DE1914 /* Models */,
+				F14851382C62B38300BB4994 /* Managers */,
+				F129D1CF2C612A5F00DE1914 /* Utils */,
+				F129D1CC2C612A0800DE1914 /* Extensions */,
+				F129D1C42C61255C00DE1914 /* Views */,
+				F129D1B52C6124D100DE1914 /* GreekTomboApp.swift */,
+				F129D1B72C6124D100DE1914 /* ContentView.swift */,
+				F1AD7D272C6250CE0008C23B /* NavigationCoordinator */,
+				F129D1B92C6124D200DE1914 /* Assets.xcassets */,
+				F129D1BB2C6124D200DE1914 /* GreekTombo.entitlements */,
+				F129D1BC2C6124D200DE1914 /* Preview Content */,
+			);
+			path = GreekTombo;
+			sourceTree = "<group>";
+		};
+		F129D1BC2C6124D200DE1914 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F129D1BD2C6124D200DE1914 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F129D1C42C61255C00DE1914 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F129D1FB2C617B6400DE1914 /* DrawsHistoryView */,
+				F129D1F62C617AE100DE1914 /* DrawLiveView */,
+				F129D1F12C61794400DE1914 /* TabMenuView */,
+				F129D1EC2C616F8900DE1914 /* DrawDetailsView */,
+				F129D1C52C6127AD00DE1914 /* DrawsView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F129D1C52C6127AD00DE1914 /* DrawsView */ = {
+			isa = PBXGroup;
+			children = (
+				F129D1C82C61292800DE1914 /* DrawsView.swift */,
+				F129D1CA2C61297300DE1914 /* DrawsViewModel.swift */,
+			);
+			path = DrawsView;
+			sourceTree = "<group>";
+		};
+		F129D1CC2C612A0800DE1914 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F129D1CD2C612A1F00DE1914 /* View+Extensions.swift */,
+				F129D1D52C612B4900DE1914 /* AlamofireSession+Extensions.swift */,
+				F129D1E42C613C7A00DE1914 /* Date+Extensions.swift */,
+				F129D1E82C61524100DE1914 /* Color+Extensions.swift */,
+				F1C343212C6229B40050DF43 /* DateFormatter+Extensions.swift */,
+				F148513C2C62C26400BB4994 /* Int+Extensions.swift */,
+				F1E1FBE72C6359FC006C0E22 /* UserDefaults+Extensions.swift */,
+				F15A0CF32C64C96A000E8267 /* DrawArray+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F129D1CF2C612A5F00DE1914 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F129D1D02C612A6E00DE1914 /* FirstAppearModifier.swift */,
+				F129D1FE2C618D5E00DE1914 /* HandDrawnCircle.swift */,
+				F1C3431F2C6224DC0050DF43 /* WebView.swift */,
+				F1AD7D2C2C625BFF0008C23B /* ShadowModifier.swift */,
+				F1E1FBE92C635F2F006C0E22 /* CombinationView.swift */,
+				F1E1FBEB2C636197006C0E22 /* BackgroundModifier.swift */,
+				F1B7C2872C649B07002D523A /* BallView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F129D1D22C612B1000DE1914 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				F129D1D32C612B1B00DE1914 /* ApiManager.swift */,
+				F129D1E62C6143CE00DE1914 /* CustomInterceptor.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		F129D1E12C61317F00DE1914 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F129D1E22C61318B00DE1914 /* Draw.swift */,
+				F129D1DC2C612DC200DE1914 /* GameType.swift */,
+				F14851362C62A6EF00BB4994 /* GameOdds.swift */,
+				F1E1FBEF2C63A338006C0E22 /* Score.swift */,
+				F1E1FBF12C63A741006C0E22 /* WinningNumbers.swift */,
+				F14851342C62A1E200BB4994 /* BettingOdds.json */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F129D1EC2C616F8900DE1914 /* DrawDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				F1C343232C622CA80050DF43 /* DrawDetailsHeaderView */,
+				F129D1ED2C616F9F00DE1914 /* DrawDetailsView.swift */,
+				F129D1EF2C616FDB00DE1914 /* DrawDetailsViewModel.swift */,
+				F148513E2C62CE3400BB4994 /* QuoteCell.swift */,
+			);
+			path = DrawDetailsView;
+			sourceTree = "<group>";
+		};
+		F129D1F12C61794400DE1914 /* TabMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				F129D1F22C61795900DE1914 /* TabMenuView.swift */,
+			);
+			path = TabMenuView;
+			sourceTree = "<group>";
+		};
+		F129D1F62C617AE100DE1914 /* DrawLiveView */ = {
+			isa = PBXGroup;
+			children = (
+				F129D1F92C617B1E00DE1914 /* DrawLiveView.swift */,
+				F1BFF5442C6412FC0049600D /* DrawLiveViewModel.swift */,
+			);
+			path = DrawLiveView;
+			sourceTree = "<group>";
+		};
+		F129D1FB2C617B6400DE1914 /* DrawsHistoryView */ = {
+			isa = PBXGroup;
+			children = (
+				F129D1FC2C617B7200DE1914 /* DrawsHistoryView.swift */,
+				F1E1FBED2C638CA8006C0E22 /* DrawsHistoryViewModel.swift */,
+				F1E1FBF32C63A9E3006C0E22 /* ScoreSectionData.swift */,
+			);
+			path = DrawsHistoryView;
+			sourceTree = "<group>";
+		};
+		F14851382C62B38300BB4994 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F14851392C62B3A100BB4994 /* DataManager */,
+				F129D1D22C612B1000DE1914 /* ApiManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F14851392C62B3A100BB4994 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				F148513A2C62B3EE00BB4994 /* DataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		F1AD7D272C6250CE0008C23B /* NavigationCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F129D1C62C6127E700DE1914 /* NavigationCoordinator.swift */,
+				F1AD7D282C6250E30008C23B /* ViewType.swift */,
+				F1AD7D2A2C62513C0008C23B /* Tab.swift */,
+				F1AD7D302C627A7C0008C23B /* NavigationCoordinatorDelegate.swift */,
+			);
+			path = NavigationCoordinator;
+			sourceTree = "<group>";
+		};
+		F1C343232C622CA80050DF43 /* DrawDetailsHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				F1C343242C622CBC0050DF43 /* DrawDetailsHeaderView.swift */,
+				F1C343262C622D570050DF43 /* DrawDetailsHeaderViewModel.swift */,
+			);
+			path = DrawDetailsHeaderView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F129D1B12C6124D100DE1914 /* GreekTombo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F129D1C12C6124D200DE1914 /* Build configuration list for PBXNativeTarget "GreekTombo" */;
+			buildPhases = (
+				F129D1AE2C6124D100DE1914 /* Sources */,
+				F129D1AF2C6124D100DE1914 /* Frameworks */,
+				F129D1B02C6124D100DE1914 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GreekTombo;
+			packageProductDependencies = (
+				F129D1DF2C61301400DE1914 /* Alamofire */,
+			);
+			productName = GreekTombo;
+			productReference = F129D1B22C6124D100DE1914 /* GreekTombo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F129D1AA2C6124D000DE1914 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F129D1B12C6124D100DE1914 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = F129D1AD2C6124D000DE1914 /* Build configuration list for PBXProject "GreekTombo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F129D1A92C6124D000DE1914;
+			packageReferences = (
+				F129D1DE2C61301400DE1914 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = F129D1B32C6124D100DE1914 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F129D1B12C6124D100DE1914 /* GreekTombo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F129D1B02C6124D100DE1914 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F129D1BE2C6124D200DE1914 /* Preview Assets.xcassets in Resources */,
+				F14851352C62A1E200BB4994 /* BettingOdds.json in Resources */,
+				F129D1BA2C6124D200DE1914 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F129D1AE2C6124D100DE1914 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1C343252C622CBC0050DF43 /* DrawDetailsHeaderView.swift in Sources */,
+				F148513B2C62B3EE00BB4994 /* DataManager.swift in Sources */,
+				F1AD7D312C627A7C0008C23B /* NavigationCoordinatorDelegate.swift in Sources */,
+				F1E1FBF22C63A741006C0E22 /* WinningNumbers.swift in Sources */,
+				F14851372C62A6EF00BB4994 /* GameOdds.swift in Sources */,
+				F129D1D42C612B1B00DE1914 /* ApiManager.swift in Sources */,
+				F129D1FF2C618D5E00DE1914 /* HandDrawnCircle.swift in Sources */,
+				F129D1F32C61795900DE1914 /* TabMenuView.swift in Sources */,
+				F129D1CB2C61297300DE1914 /* DrawsViewModel.swift in Sources */,
+				F129D1D62C612B4900DE1914 /* AlamofireSession+Extensions.swift in Sources */,
+				F129D1E32C61318B00DE1914 /* Draw.swift in Sources */,
+				F1AD7D2B2C62513C0008C23B /* Tab.swift in Sources */,
+				F1AD7D292C6250E30008C23B /* ViewType.swift in Sources */,
+				F15A0CF42C64C96A000E8267 /* DrawArray+Extensions.swift in Sources */,
+				F1E1FBF02C63A338006C0E22 /* Score.swift in Sources */,
+				F1E1FBEA2C635F2F006C0E22 /* CombinationView.swift in Sources */,
+				F1E1FBEC2C636197006C0E22 /* BackgroundModifier.swift in Sources */,
+				F1C343202C6224DC0050DF43 /* WebView.swift in Sources */,
+				F129D1EE2C616F9F00DE1914 /* DrawDetailsView.swift in Sources */,
+				F129D1F02C616FDB00DE1914 /* DrawDetailsViewModel.swift in Sources */,
+				F1AD7D2D2C625BFF0008C23B /* ShadowModifier.swift in Sources */,
+				F129D1DD2C612DC200DE1914 /* GameType.swift in Sources */,
+				F129D1E52C613C7A00DE1914 /* Date+Extensions.swift in Sources */,
+				F1E1FBE82C6359FC006C0E22 /* UserDefaults+Extensions.swift in Sources */,
+				F129D1B82C6124D100DE1914 /* ContentView.swift in Sources */,
+				F129D1FA2C617B1E00DE1914 /* DrawLiveView.swift in Sources */,
+				F148513D2C62C26400BB4994 /* Int+Extensions.swift in Sources */,
+				F129D1C92C61292800DE1914 /* DrawsView.swift in Sources */,
+				F1E1FBEE2C638CA8006C0E22 /* DrawsHistoryViewModel.swift in Sources */,
+				F129D1FD2C617B7200DE1914 /* DrawsHistoryView.swift in Sources */,
+				F1C343272C622D570050DF43 /* DrawDetailsHeaderViewModel.swift in Sources */,
+				F148513F2C62CE3400BB4994 /* QuoteCell.swift in Sources */,
+				F1E1FBF42C63A9E3006C0E22 /* ScoreSectionData.swift in Sources */,
+				F1B7C2882C649B07002D523A /* BallView.swift in Sources */,
+				F129D1C72C6127E700DE1914 /* NavigationCoordinator.swift in Sources */,
+				F129D1D12C612A6E00DE1914 /* FirstAppearModifier.swift in Sources */,
+				F129D1CE2C612A1F00DE1914 /* View+Extensions.swift in Sources */,
+				F129D1E92C61524100DE1914 /* Color+Extensions.swift in Sources */,
+				F1BFF5452C6412FC0049600D /* DrawLiveViewModel.swift in Sources */,
+				F129D1E72C6143CE00DE1914 /* CustomInterceptor.swift in Sources */,
+				F1C343222C6229B40050DF43 /* DateFormatter+Extensions.swift in Sources */,
+				F129D1B62C6124D100DE1914 /* GreekTomboApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F129D1BF2C6124D200DE1914 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F129D1C02C6124D200DE1914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F129D1C22C6124D200DE1914 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GreekTombo/GreekTombo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GreekTombo/Preview Content\"";
+				DEVELOPMENT_TEAM = P8BL8QD2NM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = demo.GreekTombo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F129D1C32C6124D200DE1914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GreekTombo/GreekTombo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GreekTombo/Preview Content\"";
+				DEVELOPMENT_TEAM = P8BL8QD2NM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = demo.GreekTombo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F129D1AD2C6124D000DE1914 /* Build configuration list for PBXProject "GreekTombo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F129D1BF2C6124D200DE1914 /* Debug */,
+				F129D1C02C6124D200DE1914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F129D1C12C6124D200DE1914 /* Build configuration list for PBXNativeTarget "GreekTombo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F129D1C22C6124D200DE1914 /* Debug */,
+				F129D1C32C6124D200DE1914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F129D1DE2C61301400DE1914 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F129D1DF2C61301400DE1914 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F129D1DE2C61301400DE1914 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F129D1AA2C6124D000DE1914 /* Project object */;
+}

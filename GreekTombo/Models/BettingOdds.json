@@ -1,0 +1,302 @@
+[
+    {
+        "gameType": 2,
+        "roundQuotes": [
+            {
+                "round": 2,
+                "quote": 1000
+            },
+            {
+                "round": 3,
+                "quote": 100
+            },
+            {
+                "round": 4,
+                "quote": 50
+            },
+            {
+                "round": 5,
+                "quote": 30
+            },
+            {
+                "round": 6,
+                "quote": 25
+            },
+            {
+                "round": 7,
+                "quote": 20
+            },
+            {
+                "round": 8,
+                "quote": 15
+            },
+            {
+                "round": 9,
+                "quote": 13
+            },
+            {
+                "round": 10,
+                "quote": 12
+            },
+            {
+                "round": 11,
+                "quote": 11
+            },
+            {
+                "round": 12,
+                "quote": 10
+            },
+            {
+                "round": 13,
+                "quote": 9
+            },
+            {
+                "round": 14,
+                "quote": 8
+            },
+            {
+                "round": 15,
+                "quote": 7
+            },
+            {
+                "round": 16,
+                "quote": 6
+            },
+            {
+                "round": 17,
+                "quote": 5
+            },
+            {
+                "round": 18,
+                "quote": 4
+            },
+            {
+                "round": 19,
+                "quote": 3
+            },
+            {
+                "round": 20,
+                "quote": 2
+            }
+        ]
+    },
+    {
+        "gameType": 3,
+        "roundQuotes": [
+            {
+                "round": 3,
+                "quote": 10000
+            },
+            {
+                "round": 4,
+                "quote": 1000
+            },
+            {
+                "round": 5,
+                "quote": 500
+            },
+            {
+                "round": 6,
+                "quote": 250
+            },
+            {
+                "round": 7,
+                "quote": 150
+            },
+            {
+                "round": 8,
+                "quote": 125
+            },
+            {
+                "round": 9,
+                "quote": 120
+            },
+            {
+                "round": 10,
+                "quote": 110
+            },
+            {
+                "round": 11,
+                "quote": 100
+            },
+            {
+                "round": 12,
+                "quote": 90
+            },
+            {
+                "round": 13,
+                "quote": 80
+            },
+            {
+                "round": 14,
+                "quote": 70
+            },
+            {
+                "round": 15,
+                "quote": 60
+            },
+            {
+                "round": 16,
+                "quote": 50
+            },
+            {
+                "round": 17,
+                "quote": 40
+            },
+            {
+                "round": 18,
+                "quote": 30
+            },
+            {
+                "round": 19,
+                "quote": 20
+            },
+            {
+                "round": 20,
+                "quote": 10
+            }
+        ]
+    },
+    {
+        "gameType": 4,
+        "roundQuotes": [
+            {
+                "round": 4,
+                "quote": 50000
+            },
+            {
+                "round": 5,
+                "quote": 10000
+            },
+            {
+                "round": 6,
+                "quote": 5000
+            },
+            {
+                "round": 7,
+                "quote": 2500
+            },
+            {
+                "round": 8,
+                "quote": 2000
+            },
+            {
+                "round": 9,
+                "quote": 1500
+            },
+            {
+                "round": 10,
+                "quote": 1000
+            },
+            {
+                "round": 11,
+                "quote": 800
+            },
+            {
+                "round": 12,
+                "quote": 700
+            },
+            {
+                "round": 13,
+                "quote": 500
+            },
+            {
+                "round": 14,
+                "quote": 400
+            },
+            {
+                "round": 15,
+                "quote": 300
+            },
+            {
+                "round": 16,
+                "quote": 250
+            },
+            {
+                "round": 17,
+                "quote": 200
+            },
+            {
+                "round": 18,
+                "quote": 150
+            },
+            {
+                "round": 19,
+                "quote": 100
+            },
+            {
+                "round": 20,
+                "quote": 50
+            }
+        ]
+    },
+    {
+        "gameType": 5,
+        "roundQuotes": [
+            {
+                "round": 5,
+                "quote": 100000
+            },
+            {
+                "round": 6,
+                "quote": 50000
+            },
+            {
+                "round": 7,
+                "quote": 25000
+            },
+            {
+                "round": 8,
+                "quote": 20000
+            },
+            {
+                "round": 9,
+                "quote": 15000
+            },
+            {
+                "round": 10,
+                "quote": 10000
+            },
+            {
+                "round": 11,
+                "quote": 8000
+            },
+            {
+                "round": 12,
+                "quote": 7000
+            },
+            {
+                "round": 13,
+                "quote": 5000
+            },
+            {
+                "round": 14,
+                "quote": 2500
+            },
+            {
+                "round": 15,
+                "quote": 1500
+            },
+            {
+                "round": 16,
+                "quote": 1250
+            },
+            {
+                "round": 17,
+                "quote": 1000
+            },
+            {
+                "round": 18,
+                "quote": 800
+            },
+            {
+                "round": 19,
+                "quote": 500
+            },
+            {
+                "round": 20,
+                "quote": 250
+            }
+        ]
+    }
+]
