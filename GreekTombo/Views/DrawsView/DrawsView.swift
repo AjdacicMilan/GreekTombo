@@ -33,10 +33,6 @@ struct DrawsView: View {
         }
         .background(Color.dirtyWhite)
         .onAppear(perform: viewModel.fetchDraws)
-        .onFirstAppear {
-            //On app init, we are loading few past draws in data session so we can handle live screen
-            ApiManager.fetchScores(saveDataInSession: true)
-        }
         .onDisappear(perform: viewModel.stopTimer)
     }
     

@@ -17,6 +17,10 @@ struct ContentView: View {
                     viewType.presentView(with: coordinator)
                 }
         }.sheet(isPresented: $coordinator.isPresentedModal, content: modalSheet)
+            .onFirstAppear {
+                //On app init, we are loading few past draws in data session so we can handle live screen
+                ApiManager.fetchScores(saveDataInSession: true)
+            }
     }
     
     @ViewBuilder
