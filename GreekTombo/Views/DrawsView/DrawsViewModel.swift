@@ -12,6 +12,7 @@ class DrawsViewModel: ObservableObject {
     
     var coordinator: NavigationCoordinator
     @Published var draws: [Draw] = []
+    var loadingInProgress: Bool = false
     
     //Better performance if DateFormatter is initiated just once(demanding operation)
     lazy var dateFormatter: DateFormatter = {
@@ -23,12 +24,15 @@ class DrawsViewModel: ObservableObject {
     }
     
     func fetchDraws() {
+        if loadingInProgress { return }
         if !draws.isEmpty {
             draws = []
         }
+        loadingInProgress = true
         ApiManager.fetchNextDraws { [weak self] nextDraws in
             guard let self else { return }
             self.draws = nextDraws
+            self.loadingInProgress = false
             TimerManager.shared.appendDelegate(self)
         }
     }
