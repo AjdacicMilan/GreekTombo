@@ -33,7 +33,9 @@ struct DrawsView: View {
         }
         .background(Color.dirtyWhite)
         .onAppear(perform: viewModel.fetchDraws)
-        .onDisappear(perform: viewModel.stopTimer)
+        .onDisappear(perform: {
+            TimerManager.shared.removeDelegate(viewModel)
+        })
     }
     
     @ViewBuilder

@@ -122,6 +122,8 @@ struct DrawDetailsView: View {
                     HStack {
                         Spacer()
                         Text("\(number)")
+                            .font(.system(size: 14))
+                            .italic()
                         Spacer()
                     }
                     Spacer()

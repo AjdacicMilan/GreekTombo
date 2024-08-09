@@ -35,6 +35,9 @@
 		F148513B2C62B3EE00BB4994 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F148513A2C62B3EE00BB4994 /* DataManager.swift */; };
 		F148513D2C62C26400BB4994 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F148513C2C62C26400BB4994 /* Int+Extensions.swift */; };
 		F148513F2C62CE3400BB4994 /* QuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F148513E2C62CE3400BB4994 /* QuoteCell.swift */; };
+		F15073092C65EB8D008B3CAD /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15073082C65EB8D008B3CAD /* TimerManager.swift */; };
+		F150730B2C65EC4E008B3CAD /* TimerDelegateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150730A2C65EC4E008B3CAD /* TimerDelegateWrapper.swift */; };
+		F150730D2C65EC68008B3CAD /* TimerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150730C2C65EC68008B3CAD /* TimerDelegate.swift */; };
 		F15A0CF42C64C96A000E8267 /* DrawArray+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15A0CF32C64C96A000E8267 /* DrawArray+Extensions.swift */; };
 		F1AD7D292C6250E30008C23B /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7D282C6250E30008C23B /* ViewType.swift */; };
 		F1AD7D2B2C62513C0008C23B /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AD7D2A2C62513C0008C23B /* Tab.swift */; };
@@ -85,6 +88,9 @@
 		F148513A2C62B3EE00BB4994 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		F148513C2C62C26400BB4994 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 		F148513E2C62CE3400BB4994 /* QuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCell.swift; sourceTree = "<group>"; };
+		F15073082C65EB8D008B3CAD /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		F150730A2C65EC4E008B3CAD /* TimerDelegateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDelegateWrapper.swift; sourceTree = "<group>"; };
+		F150730C2C65EC68008B3CAD /* TimerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDelegate.swift; sourceTree = "<group>"; };
 		F15A0CF32C64C96A000E8267 /* DrawArray+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrawArray+Extensions.swift"; sourceTree = "<group>"; };
 		F1AD7D282C6250E30008C23B /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
 		F1AD7D2A2C62513C0008C23B /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
@@ -272,6 +278,7 @@
 		F14851382C62B38300BB4994 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				F15073072C65EB7E008B3CAD /* TimerManager */,
 				F14851392C62B3A100BB4994 /* DataManager */,
 				F129D1D22C612B1000DE1914 /* ApiManager */,
 			);
@@ -284,6 +291,16 @@
 				F148513A2C62B3EE00BB4994 /* DataManager.swift */,
 			);
 			path = DataManager;
+			sourceTree = "<group>";
+		};
+		F15073072C65EB7E008B3CAD /* TimerManager */ = {
+			isa = PBXGroup;
+			children = (
+				F15073082C65EB8D008B3CAD /* TimerManager.swift */,
+				F150730A2C65EC4E008B3CAD /* TimerDelegateWrapper.swift */,
+				F150730C2C65EC68008B3CAD /* TimerDelegate.swift */,
+			);
+			path = TimerManager;
 			sourceTree = "<group>";
 		};
 		F1AD7D272C6250CE0008C23B /* NavigationCoordinator */ = {
@@ -385,6 +402,7 @@
 			files = (
 				F1C343252C622CBC0050DF43 /* DrawDetailsHeaderView.swift in Sources */,
 				F148513B2C62B3EE00BB4994 /* DataManager.swift in Sources */,
+				F150730B2C65EC4E008B3CAD /* TimerDelegateWrapper.swift in Sources */,
 				F1AD7D312C627A7C0008C23B /* NavigationCoordinatorDelegate.swift in Sources */,
 				F1E1FBF22C63A741006C0E22 /* WinningNumbers.swift in Sources */,
 				F14851372C62A6EF00BB4994 /* GameOdds.swift in Sources */,
@@ -396,6 +414,7 @@
 				F129D1E32C61318B00DE1914 /* Draw.swift in Sources */,
 				F1AD7D2B2C62513C0008C23B /* Tab.swift in Sources */,
 				F1AD7D292C6250E30008C23B /* ViewType.swift in Sources */,
+				F15073092C65EB8D008B3CAD /* TimerManager.swift in Sources */,
 				F15A0CF42C64C96A000E8267 /* DrawArray+Extensions.swift in Sources */,
 				F1E1FBF02C63A338006C0E22 /* Score.swift in Sources */,
 				F1E1FBEA2C635F2F006C0E22 /* CombinationView.swift in Sources */,
@@ -417,6 +436,7 @@
 				F148513F2C62CE3400BB4994 /* QuoteCell.swift in Sources */,
 				F1E1FBF42C63A9E3006C0E22 /* ScoreSectionData.swift in Sources */,
 				F1B7C2882C649B07002D523A /* BallView.swift in Sources */,
+				F150730D2C65EC68008B3CAD /* TimerDelegate.swift in Sources */,
 				F129D1C72C6127E700DE1914 /* NavigationCoordinator.swift in Sources */,
 				F129D1D12C612A6E00DE1914 /* FirstAppearModifier.swift in Sources */,
 				F129D1CE2C612A1F00DE1914 /* View+Extensions.swift in Sources */,

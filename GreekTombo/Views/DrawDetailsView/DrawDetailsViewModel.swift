@@ -61,7 +61,7 @@ class DrawDetailsViewModel: ObservableObject {
     }
     
     func appendToCoordinatorDelegatesList() {
-        coordinator.addDelegate(self)
+        coordinator.appendDelegate(self)
     }
     
     private func prepareRandomNumbers() -> [Int] {

@@ -11,24 +11,17 @@ import SwiftUI
 class DrawLiveViewModel: ObservableObject {
     
     var coordinator: NavigationCoordinator
-    @Published var liveDrawNumbers: [Int]
+    @Published var liveDrawNumbers: [Int] = []
     var liveDraw: Draw?
-    private var timer: Timer?
     
     init(coordinator: NavigationCoordinator) {
         self.coordinator = coordinator
-        self.liveDrawNumbers = []
     }
-    
-    func startTimer() {
-        if timer == nil {
-            timer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { [weak self] _ in
-                self?.changeLiveDrawNumbersIfNeeded()
-            }
-        }
-    }
-    
-    func changeLiveDrawNumbersIfNeeded() {
+}
+
+
+extension DrawLiveViewModel: TimerDelegate {
+    func onActionTriggered() {
         //Live is late a lil bit so we are moving a minute so user can follow his numbers on live
         let referentMoment = Date().addingTimeInterval(-60)
         //Finding the closest draw from session to referent moment
@@ -38,17 +31,5 @@ class DrawLiveViewModel: ObservableObject {
             liveDraw = newLiveDraw
             liveDrawNumbers = newLiveDrawNumbers
         }
-    }
-    
-    func appendToCoordinatorDelegatesList() {
-        coordinator.addDelegate(self)
-    }
-}
-
-
-extension DrawLiveViewModel: NavigationCoordinatorDelegate {
-    func onPopToRoot() {
-        timer?.invalidate()
-        timer = nil
     }
 }

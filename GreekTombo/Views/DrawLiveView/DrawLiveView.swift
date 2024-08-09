@@ -29,12 +29,11 @@ struct DrawLiveView: View {
             }
         }
         .background(Color.dirtyWhite)
-        .onFirstAppear {
-            viewModel.appendToCoordinatorDelegatesList()
-            viewModel.startTimer()
-        }
         .onAppear {
-            viewModel.changeLiveDrawNumbersIfNeeded()
+            TimerManager.shared.appendDelegate(viewModel)
+        }
+        .onDisappear {
+            TimerManager.shared.removeDelegate(viewModel)
         }
     }
     

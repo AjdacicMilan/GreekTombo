@@ -12,7 +12,7 @@ class NavigationCoordinator: ObservableObject {
     @Published var path = NavigationPath() {
         didSet {
             if path.isEmpty {
-                _delegates.forEach({ $0.onPopToRoot() })
+                delegates.forEach({ $0.onPopToRoot() })
             }
         }
     }
@@ -25,11 +25,11 @@ class NavigationCoordinator: ObservableObject {
     }
     var presentedModal: ViewType?
     var presentedDraw: Draw?
-    private var _delegateProxies: [NavigationCoordinatorDelegateProxy] = []
-    private var _delegates: [NavigationCoordinatorDelegate] {
+    private var delegateWrappers: [NavigationCoordinatorDelegateWrapper] = []
+    private var delegates: [NavigationCoordinatorDelegate] {
         get {
             cleanDelegates()
-            return _delegateProxies.compactMap { $0.delegate }
+            return delegateWrappers.compactMap { $0.delegate }
         }
     }
     
@@ -39,7 +39,7 @@ class NavigationCoordinator: ObservableObject {
         if path.isEmpty {
             path.append(ViewType.tabMenu)
         }
-        _delegates.forEach({ $0.drawSelected(draw: draw) })
+        delegates.forEach({ $0.drawSelected(draw: draw) })
     }
     
     func popToRoot() {
@@ -58,14 +58,14 @@ class NavigationCoordinator: ObservableObject {
         }
     }
     
-    func addDelegate(_ delegate: NavigationCoordinatorDelegate) {
+    func appendDelegate(_ delegate: NavigationCoordinatorDelegate) {
         cleanDelegates()
-        if !_delegateProxies.contains(where: { $0.delegate === delegate }) {
-            _delegateProxies.append(NavigationCoordinatorDelegateProxy(delegate: delegate))
+        if !delegateWrappers.contains(where: { $0.delegate === delegate }) {
+            delegateWrappers.append(NavigationCoordinatorDelegateWrapper(delegate: delegate))
         }
     }
     
     private func cleanDelegates() {
-        _delegateProxies.removeAll(where: { $0.delegate == nil })
+        delegateWrappers.removeAll(where: { $0.delegate == nil })
     }
 }

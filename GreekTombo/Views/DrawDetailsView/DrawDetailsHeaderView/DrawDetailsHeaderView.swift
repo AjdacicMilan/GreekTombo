@@ -39,7 +39,12 @@ struct DrawDetailsHeaderView: View {
         }
         .onFirstAppear {
             viewModel.appendToCoordinatorDelegatesList()
-            viewModel.startTimer()
+        }
+        .onAppear() {
+            TimerManager.shared.appendDelegate(viewModel)
+        }
+        .onDisappear {
+            TimerManager.shared.removeDelegate(viewModel)
         }
     }
 }

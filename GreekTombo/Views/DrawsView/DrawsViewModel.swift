@@ -18,36 +18,30 @@ class DrawsViewModel: ObservableObject {
         DateFormatter.timeFormater
     }()
     
-    private var timer: Timer?
-    
     init(coordinator: NavigationCoordinator) {
         self.coordinator = coordinator
     }
     
     func fetchDraws() {
-        stopTimer()
         if !draws.isEmpty {
             draws = []
         }
         ApiManager.fetchNextDraws { [weak self] nextDraws in
-            self?.draws = nextDraws
-            self?.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
-                self?.timerFired()
-            }
+            guard let self else { return }
+            self.draws = nextDraws
+            TimerManager.shared.appendDelegate(self)
         }
-    }
-    
-    func stopTimer() {
-        timer?.invalidate()
-        timer = nil
     }
     
     func presentTabMenu(_ draw: Draw) {
         coordinator.dismissModal()
         coordinator.presentTabMenu(draw: draw)
     }
-    
-    private func timerFired() {
+}
+
+
+extension DrawsViewModel: TimerDelegate {
+    func onActionTriggered() {
         if draws.first?.drawTime.passed ?? true {
             fetchDraws()
         } else {

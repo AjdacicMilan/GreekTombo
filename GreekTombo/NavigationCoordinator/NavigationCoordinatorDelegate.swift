@@ -8,7 +8,7 @@
 import Foundation
 
 //We are using this struct for assuring a weak referencing to array of delegates
-struct NavigationCoordinatorDelegateProxy {
+struct NavigationCoordinatorDelegateWrapper {
     weak var delegate: NavigationCoordinatorDelegate?
     
     init(delegate: NavigationCoordinatorDelegate) {
