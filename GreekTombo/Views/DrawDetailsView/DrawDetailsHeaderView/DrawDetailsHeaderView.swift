@@ -16,11 +16,17 @@ struct DrawDetailsHeaderView: View {
         VStack(spacing: 0) {
             HStack {
                 Text("Vreme izvlacenja: \(viewModel.draw.drawTime.displayTime()) | Kolo: \(String(viewModel.draw.id))")
+                    .italic()
+                    .font(.system(size: 14))
                 Spacer()
             }.padding()
             Divider()
-            HStack {
-                Text("Preostalo vreme: \(viewModel.draw.drawTime.remainingTimeDisplay)")
+            HStack(spacing: 0) {
+                Text("Preostalo vreme: ")
+                    .italic()
+                    .font(.system(size: 14))
+                Text(viewModel.draw.drawTime.remainingTimeDisplay)
+                    .font(.system(size: 14))
                 
                 Spacer()
                 
